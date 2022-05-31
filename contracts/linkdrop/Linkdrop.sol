@@ -139,26 +139,26 @@ contract Linkdrop {
     string public randomString;
 
     constructor(
-        address _token,
-        address _creator,
-        uint256 _cost,
-        uint256 _num,
-        string memory _campaignID,
-        uint256 _duration,
-        string memory _randomString
+        address _token
+        // address _creator,
+        // uint256 _cost,
+        // uint256 _num,
+        // string memory _campaignID,
+        // uint256 _duration,
+        // string memory _randomString
     ) public {
         token = IERC20(_token);
-        creator = _creator;
-        cost = _cost;
-        num = _num;
-        costPerNum = _cost / _num;
-        validator = msg.sender;
-        campaignID = _campaignID;
-        duration = _duration * 60 * 60 * 24;
-        startTime = block.timestamp;
-        endTime = startTime + duration;
-        running = true;
-        randomString = _randomString;
+        // creator = _creator;
+        // cost = _cost;
+        // num = _num;
+        // costPerNum = _cost / _num;
+        // validator = msg.sender;
+        // campaignID = _campaignID;
+        // duration = _duration * 60 * 60 * 24;
+        // startTime = block.timestamp;
+        // endTime = startTime + duration;
+        // running = true;
+        // randomString = _randomString;
     }
 
     function createMultipleLinks() public {
