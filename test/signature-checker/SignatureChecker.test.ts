@@ -12,6 +12,7 @@ describe('Signature Checker', () => {
     const catHash = await signatureChecker.CAT()
     const catHash2 = await signatureChecker.CAT2()
     const catHash3 = await signatureChecker.CAT3()
+    const catHash4 = await signatureChecker.CAT4()
     console.log(catHash)
     console.log(catHash3)
     console.log(catHash2)
@@ -19,14 +20,18 @@ describe('Signature Checker', () => {
     const temp2 = 'CatManyo'+signatureChecker.address
     // console.log(temp2)
     console.log(temp)
+    console.log(temp2)
     console.log(await signatureChecker.ad())
     console.log(signatureChecker.address)
 
     if (await signatureChecker.ad() == signatureChecker.address) {
       console.log('contract address is same')
     }
+    console.log(typeof temp)
+    console.log(typeof temp2)
+    console.log(await signatureChecker.checkAd())
 
-    if (catHash2 == temp) {
+    if (catHash4 == temp) {
       console.log('//////////////')
       console.log('hash matches')
       console.log('//////////////')
